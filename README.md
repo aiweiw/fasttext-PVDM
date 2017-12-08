@@ -97,9 +97,11 @@ The following arguments are mandatory:
 
 Please cite [1](#distributed-representations-of-sentences-and-documents) if using for PVDM.
 
+[1] Quoc V. Le, Tomas Mikolov, [*Distributed Representations of Sentences and Documents*](https://arxiv.org/abs/1405.4053)
+
 ## Contact
 
-* Contact: [574824269@qq.com](WeChat:loopal)
+* Contact: [574824269@qq.com] (WeChat:loopal)
 
 ## License
 

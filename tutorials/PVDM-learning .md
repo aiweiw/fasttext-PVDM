@@ -56,7 +56,7 @@ The first line is a header containing the number of words and the dimensionality
 The inference stage is the number of correct labels among the labels inferred by fastText. Let's take an example to make this more clear:
 
 ```
->> ./fasttext predictPVDM result/model.bin data/test.txt result/infer k
+$ ./fasttext predictPVDM result/model.bin data/test.txt result/infer k
 The argument k is optional, and is equal to 1 by default.
 ```
 The `model.bin` file is just training saved.
