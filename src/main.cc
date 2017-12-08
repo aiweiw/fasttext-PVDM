@@ -29,6 +29,8 @@ void printUsage() {
     << "  print-sentence-vectors  print sentence vectors given a trained model\n"
     << "  nn                      query for nearest neighbors\n"
     << "  analogies               query for analogies\n"
+    << "  PVDM                    train distributed memory model of paragraph vectors\n"
+    << "  predictPVDM             infer paragraph vectors for new paragraphs\n"
     << std::endl;
 }
 
