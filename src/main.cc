@@ -31,6 +31,7 @@ void printUsage() {
     << "  analogies               query for analogies\n"
     << "  PVDM                    train distributed memory model of paragraph vectors\n"
     << "  predictPVDM             infer paragraph vectors for new paragraphs\n"
+    << "  rsg                     train a reversal-skipgram model(be symmetrical with skipgram model)\n"
     << std::endl;
 }
 
@@ -313,7 +314,7 @@ int main(int argc, char** argv) {
     exit(EXIT_FAILURE);
   }
   std::string command(args[1]);
-  if (command == "skipgram" || command == "cbow" || command == "supervised") {
+  if (command == "skipgram" || command == "cbow" || command == "supervised" || command == "rsg") {
     train(args);
   } else if (command == "test") {
     test(args);
