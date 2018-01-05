@@ -1,8 +1,10 @@
 # Preparing the data
 
 Need labeled data, E.g:
+
 __label__1 __label__2 原告 诉称 ： 2013年 1月 25日 ， 原告 和 被告 ...
-__label__3 原告 诉称 ， 被告 董立志 ...
+
+__label__3 原告 诉称 ， 被告 ...
 
 # Training PVDM
 
@@ -62,7 +64,7 @@ The argument k is optional, and is equal to 1 by default.
 The `model.bin` file is just training saved.
 
 The `test.txt` file is inferred. E.g:
-原告 诉称 ， 被告 董立志 于 2009年 5月 ...
+原告 诉称 ， 被告 董** 于 2009年 5月 ...
 
 While fastText is running,  the progress and estimated time to completion is shown on your screen.  Once the program finishes, there should be one file in the result directory:
 
