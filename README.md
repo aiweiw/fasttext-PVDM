@@ -46,6 +46,7 @@ The PVDM was described in the paper [1](#distributed-representations-of-sentence
 train, use:
 
 $ ./fasttext supervised -input train.txt -output model
+
 where train.txt is a text file containing a training sentence per line along with the labels. By default, we assume that labels are words that are prefixed by the string __label__. This will output three files: model.bin, model.vec and labels.vec. Once the model was trained, you can obtain the k most likely labels for a piece of text.
 
 infer, use:
