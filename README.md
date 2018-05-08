@@ -73,12 +73,12 @@ The following arguments are mandatory:
   -verbose            verbosity level [2]
 
   The following arguments for the dictionary are optional:
-  -minCount           minimal number of word occurences [5]
+  -minCount           minimal number of word occurences [1]
   -minCountLabel      minimal number of label occurences [0]
   -wordNgrams         max length of word ngram [1]
   -bucket             number of buckets [2000000]
-  -minn               min length of char ngram [3]
-  -maxn               max length of char ngram [6]
+  -minn               min length of char ngram [0]
+  -maxn               max length of char ngram [0]
   -t                  sampling threshold [0.0001]
   -label              labels prefix [__label__]
 
