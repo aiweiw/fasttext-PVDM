@@ -24,7 +24,7 @@ In order to build `fastText`, use the following:
 
 ```
 $ git clone https://github.com/aiweiw/fasttext-PVDM.git
-$ cd fastText-PVDM
+$ cd fasttext-PVDM
 $ make
 ```
 
