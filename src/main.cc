@@ -61,7 +61,7 @@ void printPredictUsage() {
 
 void printPredictPVDMUsage() {
     std::cerr
-      << "usage: fasttext predictPVDM <model> <test-data> [<k>]\n\n"
+      << "usage: fasttext predictPVDM <model> <test-data> <label-save> [<k>]\n\n"
       << "  <model>      model filename\n"
       << "  <test-data>  test data filename\n"
       << "  <label-save> filename: predicted labels' vectors to be saved\n"
