@@ -33,8 +33,7 @@ If you do not plan on using the default system-wide compiler, update the two mac
 
 ## Example use cases
 
-This library has three main use cases: word representation learning, text classification and distributed memory
-model of paragraph vectors[PVDM].
+This library has three main use cases: word representation learning, text classification and distributed memory model of paragraph vectors[PVDM].
 The PVDM was described in the paper [1](#distributed-representations-of-sentences-and-documents).
 
 ### Word representation learning
@@ -43,15 +42,19 @@ The PVDM was described in the paper [1](#distributed-representations-of-sentence
 
 ### PVDM
 
+```
 train, use:
 
 $ ./fasttext PVDM -input train.txt -output model
+```
 
 where train.txt is a text file containing a training sentence per line along with the labels. By default, we assume that labels are words that are prefixed by the string __label__. This will output three files: model.bin, model.vec and labels.vec. Once the model was trained, you can obtain the k most likely labels for a piece of text.
 
+```
 infer, use:
 
 $ ./fasttext predictPVDM model.bin test.txt output k
+```
 
 where test.txt contains a piece of text (Chinese text should be segmented) to get paragraph vectors. Doing so will output the k most likely labels' vectors into the file: output.vec. The argument k is optional, and equal to 1 by default. 
 
